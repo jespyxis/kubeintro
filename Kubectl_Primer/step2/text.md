@@ -1,7 +1,9 @@
 There are several commands that can be used on **kubectl** in order to get information from the cluster:
 
-- **kubectl api-resources** 
-    - Check what kind of resources can be used in the cluster 
+| Command                       | Description                                              |
+| ----------------------------- | -------------------------------------------------------- |
+| **kubectl api-resources**     | Check what kind of resources can be used in the cluster  |
+- 
 - **kubectl get**           
     - Obtain information about one or several resources in the cluster
 - **kubectl explain**       
