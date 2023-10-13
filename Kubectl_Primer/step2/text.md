@@ -21,6 +21,12 @@ Let's obtain the structure of namespace API resources:
 kubectl explain namespace --recursive
   ```{{exec}}
 
+You can specify a particular location in the path and explain the structure from there as shown below:
+
+```
+kubectl explain pods.spec.containers.lifecycle --recursive
+```{{exec}}
+
 **kubectl get**
 
 There are some techniques that are worth considering here. First of all, we can adjust the output by choosing exactly which columns we want to obtain. 
