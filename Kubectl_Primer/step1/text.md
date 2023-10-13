@@ -2,5 +2,6 @@ You can call **kubectl** without arguments. If you do so, it provides you the **
 
 Try it now:
 
+```
 kubectl
 ```{{exec}}
