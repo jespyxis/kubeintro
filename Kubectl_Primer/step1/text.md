@@ -74,7 +74,7 @@
   ```{{exec}}
 
 
-  ###Congratulations! You finished the first step.###
+  **Congratulations! You finished the first step.**
 
 
 
