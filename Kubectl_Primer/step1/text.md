@@ -22,6 +22,15 @@
   kubectl get
   ```{{exec}}
 
-  What happened this time? The **kubectl get** command doesn't have enough information to execute. As a result, it prints out to you all the possible options for you to fill out.
+  What happened this time? The **kubectl get** command doesn't have enough information to execute. As a result, it prints out to you some instructions:
+
+  - How to get help about the **kubectl get** command
+  - How to get information on the resource types that you can use
+
+  Let's try to get help on the command. Execute:
+
+  ```
+  kubectl get -h
+  ```{{exec}}
 
 
