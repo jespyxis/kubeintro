@@ -49,11 +49,7 @@
   kubectl get nodes
   ```{{exec}}
 
-  The command presents some summary information about the Kubernetes cluster nodes:
-
-  NAME           STATUS   ROLES           AGE   VERSION
-  controlplane   Ready    control-plane   39d   v1.28.1
-  node01         Ready    <none>          39d   v1.28.1
+  The command presents some summary information about the Kubernetes cluster nodes.
 
   Now, execute the command that will provide you the options that you can use with **kubectl get nodes**. One of the options, **-o** allows you to choose between several output types. Try the following:
 
@@ -61,8 +57,15 @@
   kubectl get nodes -o wide
   ```{{exec}}
 
-  This is very useful as several get commands will only output basic information if you invoke them without **-o wide**
+  This is very useful as several get commands will only output basic information if you invoke them without **-o wide**. 
 
+  Open anothet tab by clicking o the **+** button at the right of **Tab 1**. Got to this tab and execute:
+
+  ```
+  kubectl get nodes -o yaml
+  ```{{exec}}
+
+  What did you get this time? The **kubectl get** command provided you the complete specification and status information for each of the nodes in YAML format.
 
 
 
