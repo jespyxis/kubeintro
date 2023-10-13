@@ -10,6 +10,7 @@ There are several commands that can be used on **kubectl** in order to get infor
 | **kubectl logs**              | Obtain the logs for a Pod or Container                                |
 
 <br>
+
 **kubectl get**
 
 There are some techniques that are worth considering here. First of all, we can adjust the output by choosing exactly which columns we want to obtain. 
@@ -33,6 +34,9 @@ Now, click on the **+** button at the right of Tab1 in order to open a new Tab. 
 kubectl create namespace myownnamespace
 ```{{exec}}
 
-Return to Tab1. Your new namespace should appear because the command was still listening for changes.
+Return to **Tab1**. Your new namespace should appear because the command was still listening for changes.
+
+**kubectl explain**
+
 
 
