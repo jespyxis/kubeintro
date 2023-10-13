@@ -16,9 +16,8 @@ There are some techniques that are worth considering here. First of all, we can 
 To do so, we need to know the path to each column that we want to include. Let's run an example:
 
 ```
-kubectl get pod -A -o 
-           custom-columns=NAME:.metadata.name,
-                          NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
+kubectl get pod -A \
+-o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
   ```{{exec}}
 
 
