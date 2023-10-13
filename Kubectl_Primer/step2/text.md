@@ -64,7 +64,7 @@ Return to **Tab1**. Your new namespace should appear because the command was sti
 
 Provides detailed information about specific instances of resources that are currently running in your cluster. For each resource, it provides a comprehensive view of a resource, including its configuration, current state, and recent events. The information is formatted as a report to be easy to read.
 
-You can use this command with or without specific resource identifiers. Let's tryit out:
+You can use this command with or without specific resource identifiers. Let's try it out:
 
 ```
 kubectl describe nodes
