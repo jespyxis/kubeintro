@@ -67,6 +67,12 @@
 
   What did you get this time? The **kubectl get** command provided you the complete specification and status information for each of the nodes in YAML format.
 
+  There are several options that are common to all kubectl commands. To see those options, run the following command:
+
+  ```
+  kubectl get nodes -o yaml
+  ```{{exec}}
+
 
 
 
