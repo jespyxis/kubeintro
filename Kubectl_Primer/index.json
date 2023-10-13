@@ -7,8 +7,8 @@
     },
     "steps": [
       {
-        "title": "Create a pod",
-        "text": "text.md",
+        "title": "1. kubectl invocation",
+        "text": "step1/text.md",
         "verify": "verify.sh"
       }
     ],
