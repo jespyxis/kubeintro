@@ -33,4 +33,14 @@
   kubectl get -h
   ```{{exec}}
 
+  The **kubectl api-resources** command provides information about all the possible API resources in your kubernetes cluster. Let's try it out:
+
+  ```
+  kubectl api-resources
+  ```{{exec}}
+
+  Some resources have alternative shornames that you can use with kubectl. Those are listed under *shortnames*. For example, a *configmap* can also be used using the *cm* shortname.
+
+  Some resources are scoped to _namespaces_ while others are not. If a resource belongs to a namespace, you must either provide the namespace or say that you want to use the kubectl command for all namespaces.
+
 
