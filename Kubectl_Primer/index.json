@@ -1,6 +1,6 @@
 {
   "title": "Kubectl introduction",
-  "description": "Uses a two node Kubernetes cluster and performs user input verification in all steps",
+  "description": "Learn the basics of kubectl using a two node Kubernetes cluster",
   "details": {
     "intro": {
       "text": "intro.md"
