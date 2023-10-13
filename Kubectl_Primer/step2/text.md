@@ -3,13 +3,23 @@ There are several commands that can be used on **kubectl** in order to get infor
 | Command                       | Description                                                           |
 | ----------------------------- | --------------------------------------------------------------------- |
 | **kubectl api-resources**     | Check what kind of resources can be used in the cluster               |
-| **kubectl get**               | Obtain information about one or several resources in the cluster      |
 | **kubectl explain**           | Obtain information about a particular resource type                   |
+| **kubectl get**               | Obtain information about one or several resources in the cluster      |
 | **kubectl verson**            | Obtain the version for the client (kubectl) and the server (cluster)  |
 | **kubectl describe**          | Obtain very detailed information for a particular resource            |
 | **kubectl logs**              | Obtain the logs for a Pod or Container                                |
 
 <br>
+
+**kubectl explain**
+
+It provides documentation about Kubernetes API resources directly. Using it with the **recursive** option is a good way to understand the structure of a resource.
+
+Let's obtain the structure of namespace API resources:
+
+```
+kubectl explain pnamespace --recursive
+  ```{{exec}}
 
 **kubectl get**
 
@@ -36,7 +46,8 @@ kubectl create namespace myownnamespace
 
 Return to **Tab1**. Your new namespace should appear because the command was still listening for changes.
 
-**kubectl explain**
+
+
 
 
 

@@ -8,8 +8,6 @@
 
   The output of the command shows you all the commands that you can use in kubectl and their categories. OpenShift has a CLI tool that is similar to kubectl. It is named **oc**
 
-  [ ]
-
   Now, try to execute the following command:
 
   ```
