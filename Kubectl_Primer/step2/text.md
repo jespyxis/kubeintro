@@ -42,7 +42,8 @@ To do so, we need to know the path to each column that we want to include. Let's
 
 ```
 kubectl get pod -A \
--o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
+-o custom-columns=NAME:.metadata.name,\
+NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
   ```{{exec}}
 
 You can also use the **-w** flag to keep listening and wait for changes on resources. Let's illustrate this. Execute the following command:
