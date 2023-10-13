@@ -9,14 +9,14 @@ There are several commands that can be used on **kubectl** in order to get infor
 | **kubectl describe**          | Obtain very detailed information for a particular resource            |
 | **kubectl logs**              | Obtain the logs for a Pod or Container                                |
 
-###kubectl get
+### kubectl get
 
 There are some techniques that are worth considering here. First of all, we can adjust the output by choosing exactly which columns we want to obtain. 
 
 To do so, we need to know the path to each column that we want to include. Let's run an example:
 
 ```
-kubelet get pod -A -o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
+kubectl get pod -A -o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,LABEL:.metadata.labels
   ```{{exec}}
 
 
