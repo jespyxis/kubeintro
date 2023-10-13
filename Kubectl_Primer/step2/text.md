@@ -74,7 +74,7 @@ kubectl describe nodes
 This command can be used to obtain the log from a Pod or from a Container insider a Pod. Execute the command below to access the kube-scheduler log
 
 ```
-kubectl logs kube-scheduler-controlplane -c kube-scheduler
+kubectl logs kube-scheduler-controlplane -c kube-scheduler -n kube-system
 ```{{exec}}
 
 
