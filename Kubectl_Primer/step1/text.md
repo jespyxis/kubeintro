@@ -70,8 +70,11 @@
   There are several options that are common to all kubectl commands. To see those options, run the following command:
 
   ```
-  kubectl get nodes -o yaml
+  kubectl options
   ```{{exec}}
+
+
+  ###Congratulations! You finished the first step.
 
 
 

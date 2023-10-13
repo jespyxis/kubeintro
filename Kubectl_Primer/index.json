@@ -9,6 +9,10 @@
       {
         "title": "1. kubectl invocation",
         "text": "step1/text.md"
+      },
+      {
+        "title": "2. Obtaining information using kubectl",
+        "text": "step2/text.md"
       }
     ],
     "finish": {
