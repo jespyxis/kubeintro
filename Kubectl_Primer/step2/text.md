@@ -24,7 +24,7 @@ kubectl get pod -A \
 You can also use the **-w** flag to keep listening and wait for changes on resources. Let's illustrate this. Execute the following command:
 
 ```
-kubectl get namespaces
+kubectl get namespaces -w
 ```{{exec}}
 
 Now, click on the **+** button at the right of Tab1 in order to open a new Tab. Then, move to that Tab and execute the following command:
