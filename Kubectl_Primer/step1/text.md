@@ -43,4 +43,10 @@
 
   Some resources are scoped to _namespaces_ while others are not. If a resource belongs to a namespace, you must either provide the namespace or say that you want to use the kubectl command for all namespaces.
 
+  Now that you know which resources are out there, let's use that knowledge. We are going to complete the **kubectl get** command to obtain information about the nodes of the cluster. Execute:
+
+  ```
+  kubectl get nodes
+  ```{{exec}}
+
 
