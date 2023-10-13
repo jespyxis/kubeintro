@@ -79,6 +79,12 @@ kubectl logs kube-scheduler-controlplane \
         -c kube-scheduler -n kube-system
 ```{{exec}}
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  This content will be hidden until the summary is clicked.
+</details>
+
 
 
 
