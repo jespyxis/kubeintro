@@ -61,6 +61,8 @@
   kubectl get nodes -o wide
   ```{{exec}}
 
+  This is very useful as several get commands will only output basic information if you invoke them without **-o wide**
+
 
 
 
