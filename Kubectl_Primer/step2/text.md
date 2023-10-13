@@ -18,7 +18,7 @@ It provides documentation about Kubernetes API resources directly. Using it with
 Let's obtain the structure of namespace API resources:
 
 ```
-kubectl explain pnamespace --recursive
+kubectl explain namespace --recursive
   ```{{exec}}
 
 **kubectl get**
