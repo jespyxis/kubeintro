@@ -5,7 +5,7 @@ There are several commands that can be used on **kubectl** in order to get infor
 | **kubectl api-resources**     | Check what kind of resources can be used in the cluster               |
 | **kubectl explain**           | Obtain information about a particular resource type                   |
 | **kubectl get**               | Obtain information about one or several resources in the cluster      |
-| **kubectl verson**            | Obtain the version for the client (kubectl) and the server (cluster)  |
+| **kubectl version**           | Obtain the version for the client (kubectl) and the server (cluster)  |
 | **kubectl describe**          | Obtain very detailed information for a particular resource            |
 | **kubectl logs**              | Obtain the logs for a Pod or Container                                |
 
@@ -58,6 +58,17 @@ kubectl create namespace myownnamespace
 ```{{exec}}
 
 Return to **Tab1**. Your new namespace should appear because the command was still listening for changes.
+
+**kubectl describe**
+
+Provides detailed information about specific instances of resources that are currently running in your cluster. For each resource, it provides a comprehensive view of a resource, including its configuration, current state, and recent events. The information is formatted as a report to be easy to read.
+
+You can use this command with or without specific resource identifiers. Let's tryit out:
+
+```
+kubectl describe nodes
+```{{exec}}
+
 
 
 
