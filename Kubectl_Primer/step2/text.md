@@ -63,7 +63,8 @@ Return to **Tab1**. Your new namespace should appear because the command was sti
 It is also possible to obtain information about different resources of different resource types using the *type/name* syntax. To see an example, try the following command:
 
 ```
-kubectl get pod/kube-scheduler-controlplane service/kube-dns -n kube-system
+kubectl get pod/kube-scheduler-controlplane\
+ service/kube-dns -n kube-system
 ```{{exec}}
 
 
@@ -106,7 +107,7 @@ To obtain the required node information execute the following command:
 kubelet get node -o custom-columns=NAME:.metadata.name,\
 MEM_CAPACITY:.status.capacity.memory,\
 MEM_ALLOCATABLE:.status.allocatable.memory
-```
+```{{exec}}
 
 </details>
 
