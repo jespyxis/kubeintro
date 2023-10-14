@@ -104,9 +104,9 @@ kubectl explain node --recursive
 To obtain the required node information execute the following command:
 
 ```
-kubelet get node -o custom-columns=NAME:.metadata.name,\
-MEM_CAPACITY:.status.capacity.memory,\
-MEM_ALLOCATABLE:.status.allocatable.memory
+kubectl get node -o custom-columns=NAME:.metadata.name,\
+  MEM_CAPACITY:.status.capacity.memory,\
+  MEM_ALLOCATABLE:.status.allocatable.memory
 ```{{exec}}
 
 </details>
