@@ -34,7 +34,7 @@ kubectl explain pods.spec.containers.lifecycle
 ```{{exec}}
 
 
-**kubectl get**
+### **kubectl get**
 
 There are some techniques that are worth considering here. First of all, we can adjust the output by choosing exactly which columns we want to obtain. 
 
@@ -60,7 +60,7 @@ kubectl create namespace myownnamespace
 
 Return to **Tab1**. Your new namespace should appear because the command was still listening for changes.
 
-**kubectl describe**
+### **kubectl describe**
 
 Provides detailed information about specific instances of resources that are currently running in your cluster. For each resource, it provides a comprehensive view of a resource, including its configuration, current state, and recent events. The information is formatted as a report to be easy to read.
 
@@ -70,7 +70,7 @@ You can use this command with or without specific resource identifiers. Let's tr
 kubectl describe nodes
 ```{{exec}}
 
-**kubectl logs**
+### **kubectl logs**
 
 This command can be used to obtain the log from a Pod or from a Container insider a Pod. Execute the command below to access the kube-scheduler log
 
