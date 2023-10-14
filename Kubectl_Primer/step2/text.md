@@ -60,6 +60,13 @@ kubectl create namespace myownnamespace
 
 Return to **Tab1**. Your new namespace should appear because the command was still listening for changes.
 
+It is also possible to obtain information about different resources of different resource types using the *type/name* syntax. To see an example, try the following command:
+
+```
+kubectl get pod/canal-jrsn8 service/kube-dns -n kube-system
+```{{exec}}
+
+
 ### **kubectl describe**
 
 Provides detailed information about specific instances of resources that are currently running in your cluster. For each resource, it provides a comprehensive view of a resource, including its configuration, current state, and recent events. The information is formatted as a report to be easy to read.
