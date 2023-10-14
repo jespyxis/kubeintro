@@ -80,7 +80,7 @@ kubectl logs kube-scheduler-controlplane \
 ```{{exec}}
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Solution</summary>
   
   This content will be hidden until the summary is clicked.
 </details>
