@@ -105,8 +105,8 @@ To obtain the required node information execute the following command:
 
 ```
 kubectl get node -o custom-columns=NAME:.metadata.name,\
-  MEM_CAPACITY:.status.capacity.memory,\
-  MEM_ALLOCATABLE:.status.allocatable.memory
+MEM_CAPACITY:.status.capacity.memory,\
+MEM_ALLOCATABLE:.status.allocatable.memory
 ```{{exec}}
 
 </details>
