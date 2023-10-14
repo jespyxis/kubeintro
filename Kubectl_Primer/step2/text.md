@@ -86,10 +86,20 @@ kubectl logs kube-scheduler-controlplane \
         -c kube-scheduler -n kube-system
 ```{{exec}}
 
+### **Challenge**
+
+Execute the command to obtain the scructure of the *node API resource*.
+
+Based on the obtained information, issue a GET command to obtain for each node its name, capacity and last hearbeat time.
+
 <details>
   <summary>Solution</summary>
-  
-  This content will be hidden until the summary is clicked.
+  To obtain the structure of the node API resource type, execute:
+
+```
+kubectl explain node --recursive
+```{{exec}}
+
 </details>
 
 
