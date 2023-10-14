@@ -90,7 +90,7 @@ kubectl logs kube-scheduler-controlplane \
 
 Execute the command to obtain the scructure of the *node API resource*.
 
-Based on the obtained information, issue a GET command to obtain for each node its name, capacity and last hearbeat time.
+Based on the obtained information, issue a GET command to obtain for each node its name, memory capacity and allocatable memory
 
 <details>
   <summary>Solution</summary>
@@ -99,6 +99,14 @@ Based on the obtained information, issue a GET command to obtain for each node i
 ```
 kubectl explain node --recursive
 ```{{exec}}
+
+To obtain the required node information execute the following command:
+
+```
+kubelet get node -o custom-columns=NAME:.metadata.name,\
+MEM_CAPACITY:.status.capacity.memory,\
+MEM_ALLOCATABLE:.status.allocatable.memory
+```
 
 </details>
 
