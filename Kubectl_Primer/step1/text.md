@@ -51,6 +51,13 @@
 
   The command presents some summary information about the Kubernetes cluster nodes.
 
+`
+controlplane $ kubectl get nodes
+NAME           STATUS   ROLES           AGE   VERSION
+controlplane   Ready    control-plane   41d   v1.28.1
+node01         Ready    <none>          41d   v1.28.1
+`
+
   Now, execute the command that will provide you the options that you can use with **kubectl get nodes**. One of the options, **-o** allows you to choose between several output types. Try the following:
 
   ```
