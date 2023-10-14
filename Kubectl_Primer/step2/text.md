@@ -96,7 +96,7 @@ Based on the obtained information, issue a GET command to obtain for each node i
 <details>
   <summary>Solution</summary>
   
-  
+  <br>
   To obtain the structure of the node API resource type, execute:
 
 ```
