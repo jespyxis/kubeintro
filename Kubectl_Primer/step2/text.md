@@ -11,7 +11,7 @@ There are several commands that can be used on **kubectl** in order to get infor
 
 <br>
 
-**kubectl explain**
+## **kubectl explain**
 
 It provides documentation about Kubernetes API resources directly. Using it with the **recursive** option is a good way to understand the structure of a resource.
 
