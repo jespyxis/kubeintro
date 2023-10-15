@@ -89,7 +89,7 @@ kubectl logs kube-scheduler-controlplane \
 
 ### **Challenge**
 
-Execute the command to obtain the scructure of the *node API resource*.
+Execute the command to obtain the structure of the *node API resource*.
 
 Based on the obtained information, issue a GET command to obtain for each node its name, memory capacity and allocatable memory
 
