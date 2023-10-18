@@ -184,13 +184,14 @@ docker ps -a
 
 ![docker ps -a output](./containers_stopped.jpg)
 
+
 #### **2. Docker Volumes**
 
 You use *docker volume* commands to create and manage volumes. The syntax is:
 
 > docker volume *desired_operation*
 
-Execute the following comman to see all the options:
+Execute the following command to see all the options:
 
 ```
 docker volume --help
