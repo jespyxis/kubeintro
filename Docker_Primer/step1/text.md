@@ -107,4 +107,5 @@ There are three ways to mount data into a container:
 | ----------------------------- | --------------------------------------------------------------------- |
 | **Bind Mount**                | You specify a path on the host system, and Docker mounts the content  |
 |                               | of the path into the container.                                       |
+| **Docker Volume**             | You define the volumes and use the containers                         |
 
