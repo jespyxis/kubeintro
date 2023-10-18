@@ -32,6 +32,7 @@ Execute the command to download the ubuntu image from Docker Hub
   <summary>Solution</summary>
   
   <br>
+
   You can execute the following command to download the ubuntu image from Docker Hub:
 
 ```
@@ -143,6 +144,9 @@ Create the abcd.txt file in the container (Tab1) and exit the container
 
 ```
 touch /mydir/abcd.txt
+```{{exec}}
+
+```
 exit
 ```{{exec}}
 
@@ -150,7 +154,6 @@ List the /myDir folder in the Host. You will see the abcd.txt file.
 
 ```
 ls /myDir
-exit
 ```{{exec}}
 
 Now, start another container and mount the volume. Then check if the abcd.txt file is there. It should be.
