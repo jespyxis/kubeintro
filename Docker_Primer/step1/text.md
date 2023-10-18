@@ -159,10 +159,27 @@ ls /myDir
 Now, start another container and mount the volume. Then check if the abcd.txt file is there. It should be.
 
 ```
-ls /myDir
 docker run -it -v /myDir:/mydir ubuntu bash
 ls /mydir
 ```{{exec}}
 
+and execute *exit* to quit and terminate the container
 
+```
+exit
+```{{exec}}
+
+Execute *docker ps* without arguments. You shall not see any container brcause it only lists the ones currently running
+
+```
+docker ps
+```{{exec}}
+
+Now, repeat the same command including the *-a* flag. You will be able to see that there are containers stopped
+
+```
+docker ps -a
+```{{exec}}
+
+![docker ps -a output](./containers_stopped.jpg)
 
