@@ -104,8 +104,28 @@ Execute **ls** on **Tab2** and run the same command on **Tab1**. How can you exp
 
 </details>
 
-<br>
+Exit the container 
 
+```
+exit
+```{{exec}}
+
+Now, execute the command to create and start a container with the environment variable MYVAR set to 123
+
+<details>
+  <summary>Solution</summary>
+  
+  <br>
+
+  You can execute the following command to have it done:
+
+```
+docker run -it -e MYVAR=123 ubuntu bash
+```{{exec}}
+
+Because you provided no Tag it will download the latest version for the image.
+
+</details>
 
 ### **Mounting a volume into the container**
 
