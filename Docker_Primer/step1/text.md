@@ -95,8 +95,16 @@ Execute **ls** on **Tab2** and run the same command on **Tab1**. How can you exp
   <summary>Solution</summary>
   
   <br>
-  The two outputs will be different. The one in **Tab1** shows you the folders in the filesystem of the ubuntu image.
+  The two outputs will be different. The one in Tab1 shows you the folders in the filesystem of the ubuntu image.
 
 </details>
 
+### **Mounting a volume into the container**
+
+There are three ways to mount data into a container:
+
+| Technique                     | Description                                                           |
+| ----------------------------- | --------------------------------------------------------------------- |
+| **Bind Mount**                | You specify a path on the host system, and Docker mounts the content  |
+|                               | of the path into the container.                                       |
 
