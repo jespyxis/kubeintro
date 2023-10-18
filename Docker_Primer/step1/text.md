@@ -258,7 +258,7 @@ Obtain details about your volume
 docker volume inspect myvolume
 ```{{exec}}
 
-#### **3. tmpFS mount**
+#### **3. tmpfs mount**
 
 To use a tmpfs mount, you can employ the --tmpfs option with the docker run command
 
