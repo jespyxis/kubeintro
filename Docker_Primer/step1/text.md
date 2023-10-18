@@ -20,6 +20,12 @@ where:
 - TAG provides the Tag for the image that you want to download. You can have several versions of an image under different Tags
 - DIGEST provides an alternative way to identify the image that you want to download. Instead of providing the Tag you provide the Message Digest (SHA256 Hash)
 
+| OPTIONS            | are options to provide to *docker pull*. You can specify --all-tags to download all tagged images and --quiet to suppress verbose output                                                           |
+| NAME               | is the name of the image that you wand to download                               |
+| TAG                | provides the Tag for the image that you want to download. You can have several versions of an image under different Tags                               |
+| DIGEST             | provides an alternative way to identify the image that you want to download. Instead of providing the Tag you provide the Message Digest (SHA256 Hash)                               |
+
+
 By default, *docker pull* will get the images from Docker Hub. The NAME can be prefixed with the repository location if you want to use an alternate repository as in the example below
 
 ```
