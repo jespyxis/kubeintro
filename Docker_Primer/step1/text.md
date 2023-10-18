@@ -255,12 +255,26 @@ docker volume list
 Obtain details about your volume
 
 ```
-docker inspect myvolume
+docker volume inspect myvolume
 ```{{exec}}
 
-and remove your volume
+#### **3. tmpFS mount**
+
+To use a tmpfs mount, you can employ the --tmpfs option with the docker run command
+
+> docker run --tmpfs path_where_to_mount image_name
+
+Execute the following command to start a container and mount a temporary file system into *temp there
 
 ```
-docker rm myvolume
+docker run -it --tmpfs /temp ubuntu bash
 ```{{exec}}
 
+Now, create the *file1.txt* file there
+
+``
+touch /temp/file.txt
+ls /temp
+```{{exec}}
+
+Temporary file systems are faster because the data will be stored in memory. However, when your container is terminated you lose all data.
