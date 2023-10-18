@@ -64,7 +64,7 @@ docker run --help
 
 command to obtain Help information about the *docker run* command. 
 
-Using this returned information, execute the command to create and run a container from the *ubuntu* image. The *interactive* and *pseudo-tty* options shall be used and the container shall execute the *bash* shell. We also want to give extended priviledges to the container.
+Using this returned information, execute the command to create and run a container from the *ubuntu* image. The *interactive* and *pseudo-tty* options shall be used and the container shall execute the *bash* shell. We also want to give extended privileges to the container.
 
 <details>
   <summary>Solution</summary>
@@ -75,4 +75,18 @@ Using this returned information, execute the command to create and run a contain
 ```
 docker run -it --privileged ubuntu bash
 ```{{exec}}
+</details>
+
+Click on the *+* button at the right of Tab1 to create another Tab (Tab2) and move to this new Tab.
+
+On the new Tab, execute the following command:
+
+```
+docker ps -a
+```{{exec}}
+
+This time, you will find one Container Running, the one that you have just started
+
+![docker ps output](./docker_ps.jpg)
+
 
