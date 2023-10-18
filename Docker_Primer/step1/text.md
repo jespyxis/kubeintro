@@ -272,9 +272,17 @@ docker run -it --tmpfs /temp ubuntu bash
 
 Now, create the *file1.txt* file there
 
-``
+```
 touch /temp/file.txt
 ls /temp
 ```{{exec}}
 
 Temporary file systems are faster because the data will be stored in memory. However, when your container is terminated you lose all data.
+
+Exit your container by running 
+
+```
+exit
+```
+
+### **Congratulations. You finish the scenario!**
