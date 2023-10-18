@@ -114,7 +114,8 @@ There are three ways to mount data into a container:
 | **Docker Volume**             | You define the volumes and use the containers                         |
 | **tmpfs mount**               | You mount an in-memory file system into the Docker container                         |
 
-#### 1. Bind Mounts
+
+#### **1. Bind Mounts**
 
 To use a Bind Mount, use the **-v** or **--volume** option in the docker run command
 
@@ -183,3 +184,4 @@ docker ps -a
 
 ![docker ps -a output](./containers_stopped.jpg)
 
+#### **2. Docker Volumes**
