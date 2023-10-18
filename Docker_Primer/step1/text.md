@@ -5,7 +5,7 @@
 
 You should not have any image so far
 
-### *docker pull*
+### **Downloading images from a repository**
 
 The *docker pull* command downloads images from a Docker registry. 
   
@@ -45,3 +45,16 @@ Because you provided no Tag it will download the latest version for the image.
 Execute the *docker images* command again. This time you should find the ubuntu image
 
 ![docker images output](./docker_images.jpg)
+
+### **Creating and running containers**
+
+Execute the following command:
+
+```
+docker ps -a
+```{{exec}}
+
+This command will show all the created containers. The *-a* flag is used to show all containers and not only the ones that are currently running. 
+
+You should not have any container created yet.
+
