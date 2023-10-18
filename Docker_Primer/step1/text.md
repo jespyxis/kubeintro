@@ -56,5 +56,11 @@ docker ps -a
 
 This command will show all the created containers. The *-a* flag is used to show all containers and not only the ones that are currently running. 
 
-You should not have any container created yet.
+You should not have any container created yet. Use the 
+
+```
+docker run --help
+```
+
+command to obtain Help information about the *docker run* command.
 
