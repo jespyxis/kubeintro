@@ -123,9 +123,15 @@ Now, execute the command to create and start a container with the environment va
 docker run -it -e MYVAR=123 ubuntu bash
 ```{{exec}}
 
-Because you provided no Tag it will download the latest version for the image.
-
 </details>
+
+Check that you have the environment variable set
+
+```
+env | grep MYVAR
+```{{exec}}
+
+
 
 ### **Mounting a volume into the container**
 
