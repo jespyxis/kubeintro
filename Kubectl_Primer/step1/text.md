@@ -10,7 +10,9 @@ The output of the command shows you all the commands that you can use in kubectl
 
 Now, try to execute the following command:
 
+```
 kubectl version
+```{{exec}}
 
 
 This command is used to display the version information of both the kubectl command-line tool (client-version) and the Kubernetes cluster it's connected to (server-version). Because the command don't require any additional option, it executes and provides you with the desired data.
