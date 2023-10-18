@@ -89,4 +89,14 @@ This time, you will find one Container Running, the one that you have just start
 
 ![docker ps output](./docker_ps.jpg)
 
+Execute **ls** on **Tab2** and run the same command on **Tab1**. How can you explain the differences? 
+
+<details>
+  <summary>Solution</summary>
+  
+  <br>
+  The two outputs will be different. The one in *+Tab1** shows you the folders in the filesystem of the ubuntu image.
+
+</details>
+
 
