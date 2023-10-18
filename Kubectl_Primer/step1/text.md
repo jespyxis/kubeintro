@@ -2,6 +2,7 @@ You can call kubectl without arguments. If you do so, it provides you the kubect
 
 Try it now:
 
+```
 kubectl
 ```{{exec}}
 
@@ -16,7 +17,9 @@ This command is used to display the version information of both the kubectl comm
 
 Now, try the following command:
 
+```
 kubectl get
+```{{exec}}
 
 
 What happened this time? The **kubectl get** command doesn't have enough information to execute. As a result, it prints out to you some instructions:
@@ -26,12 +29,15 @@ What happened this time? The **kubectl get** command doesn't have enough informa
 
 Let's try to get help on the command. Execute:
 
+```
 kubectl get -h
-
+```{{exec}}
 
 The **kubectl api-resources** command provides information about all the possible API resources in your kubernetes cluster. Let's try it out:
 
+```
 kubectl api-resources
+```{{exec}}
 
 
 Some resources have alternative short names that you can use with kubectl. Those are listed under *shortnames*. For example, a *configmap* can also be used using the *cm* shortname.
@@ -40,28 +46,34 @@ Some resources are scoped to _namespaces_ while others are not. If a resource be
 
 Now that you know which resources are out there, let's use that knowledge. We are going to complete the **kubectl get** command to obtain information about the nodes of the cluster. Execute:
 
+```
 kubectl get nodes
-
+```{{exec}}
 
 The command presents some summary information about the Kubernetes cluster nodes.
 
 Now, execute the command that will provide you the options that you can use with **kubectl get nodes**. One of the options, **-o** allows you to choose between several output types. Try the following:
 
+```
 kubectl get nodes -o wide
-
+```{{exec}}
 
 This is very useful as several get commands will only output basic information if you invoke them without **-o wide**. 
 
 Open anothet tab by clicking o the **+** button at the right of **Tab 1**. Got to this tab and execute:
 
+```
 kubectl get nodes -o yaml
+```{{exec}}
 
 
 What did you get this time? The **kubectl get** command provided you the complete specification and status information for each of the nodes in YAML format.
 
 There are several options that are common to all kubectl commands. To see those options, run the following command:
 
+```
 kubectl options
+```{{exec}}
 
 
 
