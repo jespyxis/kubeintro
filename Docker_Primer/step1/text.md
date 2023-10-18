@@ -208,3 +208,18 @@ docker volume create myvolume
 ```{{exec}}
 
 </details>
+
+You can mount the volume into a container using the same syntax that you saw for bind mounts. The difference is in the name: Include the docker volume name instead of providing the path to the host folder.
+
+Execute the following command to start a container and mount your volume there in the *myvol* folder:
+
+```
+docker run -it -v myvolume:/myvol ubuntu bash
+```{{exec}}
+
+Now, switch to Tab2 and start another container mounting the same volume in the same location
+
+```
+docker run -it -v myvolume:/myvol ubuntu bash
+```{{exec}}
+
