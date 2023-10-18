@@ -95,7 +95,7 @@ Execute **ls** on **Tab2** and run the same command on **Tab1**. How can you exp
   <summary>Solution</summary>
   
   <br>
-  The two outputs will be different. The one in *+Tab1** shows you the folders in the filesystem of the ubuntu image.
+  The two outputs will be different. The one in **Tab1** shows you the folders in the filesystem of the ubuntu image.
 
 </details>
 
