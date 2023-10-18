@@ -62,5 +62,17 @@ You should not have any container created yet. Use the
 docker run --help
 ```
 
-command to obtain Help information about the *docker run* command.
+command to obtain Help information about the *docker run* command. 
+
+Using this returned information, execute the command to create and run a container from the *ubuntu* image. The *interactive* and *pseudo-tty* options shall be used and the container shall execute the *bash* shell. We also want to give extended priviledges to the container.
+
+<details>
+  <summary>Solution</summary>
+  
+  <br>
+  You can execute the following command to create and run the container:
+
+```
+docker run -it --privileged ubuntu bash
+```{{exec}}
 
