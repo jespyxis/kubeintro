@@ -131,8 +131,6 @@ Now, create a folder called myDir and create a the *myFile.txt* file there.
 
 ```
 mkdir myDir
-cd myDir
-touch myFile.txt
 ```{{exec}}
 
 Then, execute the following command to start a container and mount this folder in the **/mydir** location in the container
@@ -140,5 +138,28 @@ Then, execute the following command to start a container and mount this folder i
 ```
 docker run -it -v /myDir:/mydir ubuntu bash
 ```{{exec}}
+
+Create the abcd.txt file in the container (Tab1) and exit the container
+
+```
+touch /mydir/abcd.txt
+exit
+```{{exec}}
+
+List the /myDir folder in the Host. You will see the abcd.txt file.
+
+```
+ls /myDir
+exit
+```{{exec}}
+
+Now, start another container and mount the volume. Then check if the abcd.txt file is there. It should be.
+
+```
+ls /myDir
+docker run -it -v /myDir:/mydir ubuntu bash
+ls /mydir
+```{{exec}}
+
 
 
