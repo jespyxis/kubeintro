@@ -99,6 +99,9 @@ Execute **ls** on **Tab2** and run the same command on **Tab1**. How can you exp
 
 </details>
 
+<br>
+
+
 ### **Mounting a volume into the container**
 
 There are three ways to mount data into a container:
