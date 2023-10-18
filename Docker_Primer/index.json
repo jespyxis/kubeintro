@@ -1,0 +1,25 @@
+{
+  "title": "Kubectl introduction",
+  "description": "Learn the basics of kubectl using a two node Kubernetes cluster",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "1. kubectl invocation",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "2. Obtaining information using kubectl",
+        "text": "step2/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
