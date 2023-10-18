@@ -224,3 +224,43 @@ Now, switch to Tab2 and start another container mounting the same volume in the 
 docker run -it -v myvolume:/myvol ubuntu bash
 ```{{exec}}
 
+Now, create the file *file1.txt* in the /myvol folder
+
+```
+touch /myvol/file1.txt
+```{{exec}}
+
+and return to the other container in **Tab1** and check the folder
+
+```
+ls /myvol
+```{{exec}}
+
+You should see the file created by the other container. 
+
+Exit both containers by executing 
+
+```
+exit
+```
+
+on each of them
+
+List the volumes that you have. You shall see your volume
+
+```
+docker volume list
+```{{exec}}
+
+Obtain details about your volume
+
+```
+docker inspect myvolume
+```{{exec}}
+
+and remove your volume
+
+```
+docker rm myvolume
+```{{exec}}
+
