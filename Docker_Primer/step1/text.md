@@ -285,4 +285,4 @@ Exit your container by running
 exit
 ```
 
-### **Congratulations. You finish the scenario!**
+### **Congratulations. You finish this step!**
