@@ -1,18 +1,14 @@
 {
-  "title": "Kubectl introduction",
-  "description": "Learn the basics of kubectl using a two node Kubernetes cluster",
+  "title": "Docker introduction",
+  "description": "Learn docker basics",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "1. kubectl invocation",
+        "title": "1. To do",
         "text": "step1/text.md"
-      },
-      {
-        "title": "2. Obtaining information using kubectl",
-        "text": "step2/text.md"
       }
     ],
     "finish": {
@@ -20,6 +16,6 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-2nodes"
+    "imageid": "ubuntu"
   }
 }
