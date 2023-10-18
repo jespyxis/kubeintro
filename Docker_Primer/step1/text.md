@@ -41,3 +41,7 @@ docker pull ubuntu
 Because you provided no Tag it will download the latest version for the image.
 
 </details>
+
+Execute the *docker images* command again. This time you should find the ubuntu image
+
+![docker images output](./docker_images.jpg)

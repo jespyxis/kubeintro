@@ -7,7 +7,7 @@
     },
     "steps": [
       {
-        "title": "1. To do",
+        "title": "1. Creating and running a container",
         "text": "step1/text.md"
       }
     ],
