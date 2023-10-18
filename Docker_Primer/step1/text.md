@@ -70,6 +70,7 @@ Using this returned information, execute the command to create and run a contain
   <summary>Solution</summary>
   
   <br>
+
   You can execute the following command to create and run the container:
 
 ```
@@ -118,6 +119,26 @@ To use a Bind Mount, use the **-v** or **--volume** option in the docker run com
 
 > docker run -v host_path:container_path image_name
 
-Let's try it. 
+Let's try it. Start by exiting the running container. In **Tab1** execute
+
+```
+exit
+```{{exec}}
+
+to exit the container and return to the Host.
+
+Now, create a folder called myDir and create a the *myFile.txt* file there.
+
+```
+mkdir myDir
+cd myDir
+touch myFile.txt
+```{{exec}}
+
+Then, execute the following command to start a container and mount this folder in the **/mydir** location in the container
+
+```
+docker run -it -v /myDir:/mydir ubuntu bash
+```{{exec}}
 
 
