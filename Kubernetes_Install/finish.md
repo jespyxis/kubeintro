@@ -2,4 +2,4 @@
 
 ### WELL DONE !
 
-You solved this challenge!
+You sfinished the activity!

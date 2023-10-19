@@ -70,7 +70,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 
 #### **4. Verify the cluster**
 
-Execute the following command to verify your cluster. You should have an one node cluster
+Execute the following command to verify your cluster. You should have an one node cluster. Repeat the command until you see the node in READY status.
 
 ```
 kubectl get nodes
