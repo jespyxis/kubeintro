@@ -84,7 +84,7 @@ docker build -t my-image .
 Execute the following code to run the image 
 
 ```
-docker run -d -p 2000:80 my-custom-image
+docker run -d -p 2000:80 my-image
 ```{{exec}}
 
 Click on the following link to check that things are working fine
