@@ -125,6 +125,7 @@ docker run -it -e MYVAR=123 ubuntu bash
 
 </details>
 
+
 Check that you have the environment variable set
 
 ```
