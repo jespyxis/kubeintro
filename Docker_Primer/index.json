@@ -9,6 +9,10 @@
       {
         "title": "1. Creating and running a container",
         "text": "step1/text.md"
+      },
+      {
+        "title": "2. Creating a custom image",
+        "text": "step2/text.md"
       }
     ],
     "finish": {
