@@ -88,7 +88,8 @@ Create the **requirements.txt** file with the following content
 
 ```
 Flask==2.0.2
-redis==3.5.3
+redis==3.1.0
+Werkzeug==2.2.2
 ```{{copy}}
 
 Create the **docker-compose.yml** file with the following content
