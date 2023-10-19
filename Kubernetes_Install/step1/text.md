@@ -40,6 +40,12 @@ Several cluster components will run in containers and we need to have the contai
 kubeadm config images pull
 ```{{exec}}
 
+List the obtained images
+
+```
+kubeadm config images list
+```{{exec}}
+
 Now, execute the *kubeadm init* command to initialize the cluster. The command usually ends with a kubeadm join command with tokens and IP that you will need to use on worker nodes to join the cluster.
 
 ```
