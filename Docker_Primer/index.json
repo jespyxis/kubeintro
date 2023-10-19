@@ -13,6 +13,10 @@
       {
         "title": "2. Creating a custom image",
         "text": "step2/text.md"
+      },
+      {
+        "title": "3. Using docker-compose",
+        "text": "step3/text.md"
       }
     ],
     "finish": {

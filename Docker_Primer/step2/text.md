@@ -87,7 +87,7 @@ Execute the following code to run the image
 docker run -d -p 3000:80 my-image
 ```{{exec}}
 
-Click on the following link to check that things are working fine
+Click on the following link to check that things are working fine.
 
 [Song Lyrics]({{TRAFFIC_HOST1_3000}})
 
