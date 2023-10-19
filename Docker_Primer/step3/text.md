@@ -74,7 +74,7 @@ Flask==2.0.2
 redis==3.5.3
 ```{{copy}}
 
-Create the **Dockerfiledocker-compose.yml** file with the following content
+Create the **docker-compose.yml** file with the following content
 
 ```
 version: '3.7'
