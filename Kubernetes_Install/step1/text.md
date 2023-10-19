@@ -26,7 +26,7 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 ```{{exec}}
 
-and hold them to the current version
+and hold them to the current version. Putting the kubelet, kubeadm, and kubectl packages on hold is common practice. It is a measure to maintain cluster stability and control over the Kubernetes versions being used. When you're ready to upgrade Kubernetes, you can manually unhold the packages, upgrade them, and then put them back on hold if desired.
 
 ```
 sudo apt-mark hold kubelet kubeadm kubectl
