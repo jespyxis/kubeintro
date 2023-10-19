@@ -45,11 +45,28 @@ This file defines and describes the services, networks, and volumes for the Dock
 ```
 mkdir flask_redis_app
 cd flask_redis_app
+mkdir app
 ```{{exec}}
 
 to create the project folder
 
-Create the **app.py** file with the following content
+Create the **Dockerfile** file with the following content 
+
+```
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
+```{{copy}}
+
+
+Create the **app.py** file in the **app** folder with the following content
 
 ```
 from flask import Flask
