@@ -1,18 +1,14 @@
 {
-  "title": "Kubectl introduction",
-  "description": "Learn the basics of kubectl using a two node Kubernetes cluster",
+  "title": "Kubernetes installation",
+  "description": "Learn how to install kubernetes and install an one node cluster",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "1. kubectl invocation",
+        "title": "1. Install and Build an One Node Cluster",
         "text": "step1/text.md"
-      },
-      {
-        "title": "2. Obtaining information using kubectl",
-        "text": "step2/text.md"
       }
     ],
     "finish": {
