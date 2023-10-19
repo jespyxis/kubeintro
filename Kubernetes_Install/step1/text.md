@@ -12,10 +12,6 @@ sudo swapoff -a
 Then, we add the Kubernetes official apt repository
 
 ```
-sudo apt-get update && sudo apt-get install -y apt-transport-https curl
-```{{exec}}
-
-```
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 ```{{exec}}
 
@@ -38,7 +34,13 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 #### **2. Bootstrap the cluster**
 
-Execute this command to initialize the cluster. The command usually ends with a kubeadm join command with tokens and IP that you will need to use on worker nodes to join the cluster.
+Several cluster components will run in containers and we need to have the container images available. The kubeadm init command will pull the necessary images. However, for the sake of showing which images will be needed we will pull those images in advance. Execute the following command to pull the images:
+
+```
+kubeadm config images pull
+```{{exec}}
+
+Now, execute the *kubeadm init* command to initialize the cluster. The command usually ends with a kubeadm join command with tokens and IP that you will need to use on worker nodes to join the cluster.
 
 ```
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=numCPU
@@ -67,6 +69,34 @@ Execute the following command to verify your cluster. You should have an one nod
 ```
 kubectl get nodes
 ```{{exec}}
+
+Execute the *kubectl describe node* to check the node details
+
+```
+kubectl get nodes
+```{{exec}}
+
+Now, execute the following command to see which Pods were created
+
+
+```
+kubectl get pods --all-namespaces
+```{{exec}}
+
+#### **4. Next steps**
+
+the next step would be to setup the worker nodes and make them join the cluster. On each worker node you would run 
+
+```
+kubeadm join [master-ip]:6443 --token [token] --discovery-token-ca-cert-hash [hash]
+```
+ to join the cluster. The exact command was actually listed by the *kubeadm init*.
+
+
+### Congratulations! You finished the activity.
+
+
+
 
 
 
