@@ -73,7 +73,7 @@ kubectl get nodes
 Execute the *kubectl describe node* to check the node details
 
 ```
-kubectl get nodes
+kubectl describe node ubuntu
 ```{{exec}}
 
 Now, execute the following command to see which Pods were created
