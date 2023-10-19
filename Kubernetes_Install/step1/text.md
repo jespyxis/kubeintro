@@ -89,15 +89,43 @@ Now, execute the following command to see which Pods were created
 kubectl get pods --all-namespaces
 ```{{exec}}
 
-#### **4. Next steps**
+#### **4. The Container Runtime Interface (CRI)**
 
-the next step would be to setup the worker nodes and make them join the cluster. On each worker node you would run 
+CRI is a plugin interface that enables Kubernetes to use a wide variety of container runtimes, without the need to recompile. It was introduced to ensure a clear separation between the Kubernetes components (like the Kubelet) and the underlying container runtimes.
+
+The Kubernetes community introduced CRI to decouple the Kubelet from specific container runtimes and provide a clear and stable API for container operations. 
+
+The main components of CRI are:
+
+| Component             | Description                                                               |
+| --------------------- | --------------------------------------------------------------------- |
+| ImageService          | Responsible for all image-related operations like pulling, removing, or inspecting images.     |
+| RuntimeService        | Manages the complete lifecycle of the containers, from starting to stopping them, and includes operations like creating pods, updating container resources, or executing commands in containers.     |
+
+The **cri-tools** package includes the **crictl** tool. You can use it as a command-line interface for CRI-compatible container runtimes.
+
+Execute the following command to see which container images are available
+
+```
+crictl images
+```{{exec}}
+
+Execute the following command to obtain information about the running containers
+
+```
+crictl ps
+```{{exec}}
+
+Execute **crictl** without arguments or **critl --help** to check the available options. Feel free to play around with them.
+
+#### **5. Adding Worker Nodes**
+
+The next step would be to setup the worker nodes and make them join the cluster. On each worker node you would run 
 
 ```
 kubeadm join [master-ip]:6443 --token [token] --discovery-token-ca-cert-hash [hash]
 ```
  to join the cluster. The exact command was actually listed by the *kubeadm init*.
-
 
 ### Congratulations! You finished the activity.
 
