@@ -48,7 +48,7 @@ def hello():
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 EOF
-```
+```{{copy}}
 
 Create the Dockerfile
 
@@ -84,12 +84,12 @@ docker build -t my-image .
 Execute the following code to run the image 
 
 ```
-docker run -d -p 2000:80 my-image
+docker run -d -p 3000:80 my-image
 ```{{exec}}
 
 Click on the following link to check that things are working fine
 
-[Song Lyrics]({{TRAFFIC_HOST1_2000}})
+[Song Lyrics]({{TRAFFIC_HOST1_3000}})
 
 ### **Congratulations. You finish this step!**
 
