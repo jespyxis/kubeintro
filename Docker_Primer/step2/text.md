@@ -73,7 +73,7 @@ EOF
 | EXPOSE 80                   | Makes port 80 available outside the container   |
 | CMD ["python", "app.py"]    | Sets the command that will run when you start the container   |
 
-#### **2. Build and run the image
+#### **2. Build and run the image**
 
 Execute the following command to build the image
 
