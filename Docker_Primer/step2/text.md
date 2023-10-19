@@ -34,7 +34,7 @@ Create the requirements.txt and the app.py files
 awk '/EOF/{exit} 1' > requirements.txt
 Flask
 EOF
-```{{copy}}
+```
 
 ```
 awk '/EOF/{exit} 1' > app.py
@@ -48,7 +48,7 @@ def hello():
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 EOF
-```{{exec}}
+```
 
 Create the Dockerfile
 
