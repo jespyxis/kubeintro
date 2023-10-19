@@ -53,7 +53,7 @@ to create the project folder
 Create the **Dockerfile** file with the following content 
 
 ```
-FROM python:3.9-slim
+FROM python:3.8-slim-buster
 
 WORKDIR /app
 
