@@ -1,7 +1,7 @@
 
 We will install kubernetes and setup a single node cluster. 
 
-Start by turning swap off as it is not supported by Kubernetes
+Start by turning off swapping as it is not supported by Kubernetes.
 
 ```
 sudo swapoff -a
