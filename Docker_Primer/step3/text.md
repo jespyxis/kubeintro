@@ -126,8 +126,17 @@ docker-compose up
 ```{{exec}}
 
 Use the [following link]({{TRAFFIC_HOST1_5000}})
- to access the application:
+ to access the application. Refresh the page several times and you will see the counter being incremented.
 
+ Switch to **Tab2** and execute 
+
+ ```
+docker ps
+```{{exec}}
+
+You should see teo containers running. One for the application and other for the database.
+
+### **Congratulations. You finish this step!**
 
 
 
