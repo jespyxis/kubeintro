@@ -34,7 +34,7 @@ Create the requirements.txt and the app.py files
 awk '/EOF/{exit} 1' > requirements.txt
 Flask
 EOF
-```{{exec}}
+```{{copy}}
 
 ```
 awk '/EOF/{exit} 1' > app.py
