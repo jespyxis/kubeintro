@@ -19,7 +19,7 @@ We wil be using *docker build* because we don't have *buildx* installed in the l
 
 We are going to create a custom docker image and use it to create a container that runs a python app. 
 
-#### 1. Setup the project folder and files
+#### **1. Setup the project folder and files**
 
 Create the project folder and go there
 
@@ -60,8 +60,8 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 80
 CMD ["python", "app.py"]
-
-```{{exec}}
+EOF
+```{{copy}}
 
 
 | Instruction                 | Explanation                                                           |
@@ -72,6 +72,26 @@ CMD ["python", "app.py"]
 | RUN pip install ...         | Installs Flask   |
 | EXPOSE 80                   | Makes port 80 available outside the container   |
 | CMD ["python", "app.py"]    | Sets the command that will run when you start the container   |
+
+#### **2. Build and run the image
+
+Execute the following command to build the image
+
+```
+docker build -t my-image .
+```{{exec}}
+
+Execute the following code to run the image 
+
+```
+docker run -d -p 2000:80 my-custom-image
+```{{exec}}
+
+Click on the following link to check that things are working fine
+
+[Song Lyrics]({{TRAFFIC_HOST1_2000}})
+
+### **Congratulations. You finish this step!**
 
 
 
