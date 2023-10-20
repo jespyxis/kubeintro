@@ -52,6 +52,8 @@ Now, execute the *kubeadm init* command to initialize the cluster. The command u
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --ignore-preflight-errors=numCPU
 ```{{exec}}
 
+The **--pod-network-cidr** choosen value matches the default IP address range for the Flannel CNI plugin and choosing it avoids the need of additional configurations. 
+
 Move the kubeconfig file to its default location and give it the appropriate permissions:
 
 ```
