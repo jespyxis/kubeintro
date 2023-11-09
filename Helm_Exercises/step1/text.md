@@ -89,7 +89,7 @@ Now, let's see the manifest YAML that is generated when we use the Chart. To do 
 helm template bitnami/nginx | more
 ```{{exec}}
 
-Now we are going to install a nginx instance using the Chart. Execute the following command:
+Now we are going to install a nginx instance using the Chart. Execute the following command to install nginx using the bitnami/nginx Chart and override the defaults to use a LoadBalancer service available at NodePort 30369
 
 
 ```
