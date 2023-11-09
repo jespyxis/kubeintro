@@ -185,3 +185,5 @@ Use the helm list command. You should not see the release anymore.
 ```
 helm list
 ```{{exec}}
+
+### Congratulations! You finished the first step.
