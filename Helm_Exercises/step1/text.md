@@ -107,7 +107,7 @@ You shall have a Pod, a Service, a Deployment and a ReplicaSet created. Wait til
 
 Use the link below. You should be able to reach NGINX by using it. 
 
-[Use this link to reach nginx]({{TRAFFIC_HOST1_30369}})
+[Use this link to reach nginx at port 30369]({{TRAFFIC_HOST1_30369}})
 
 Use the following command to show the application releases
 
@@ -130,9 +130,58 @@ kubectl get all -n helm-exercises
 
 Then, use the link below. You should be able to reach NGINX in the new NodePort. 
 
-[Use this link to reach nginx]({{TRAFFIC_HOST1_30370}})
+[Use this link to reach nginx at port 30370]({{TRAFFIC_HOST1_30370}})
+
+Repeat the 
+
+
+```
+helm list
+```{{exec}}
+
+command. You should now see the rew release (Revision = 2)
+
+Execute the following command to see the release history
+
+```
+helm history my-nginx
+```{{exec}}
+
+Now, you see both revisions and revision 1 should be superseeded by revision 2. Execute the following command to go back to the first revision
+
+```
+helm rollback my-nginx 1
+```{{exec}}
+
+Repeat the 
+
+
+```
+helm list
+```{{exec}}
+
+command. You should now see a new revision that is the result of the rollback. Execute the following command to see the history
+
+```
+helm history my-nginx
+```{{exec}}
+
+You shall get an output similar to the following: 
+
+![Release History](./history.jpg)
+
+It shows that you add an initial revision, upgraded to use a different NodePort and returned back to the first NodePort using the rollback command. You can check that this is happening by using the following link
+
+[Use this link to reach nginx at port 30369]({{TRAFFIC_HOST1_30369}})
 
 Now, use Helm to remove the Kubernetes Application. Execute the following command:
 
+```
+helm uninstall my-nginx
+```{{exec}}
 
+Use the helm list command. You should not see the release anymore.
 
+```
+helm list
+```{{exec}}
