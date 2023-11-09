@@ -1,0 +1,21 @@
+{
+    "title": "Kubernetes installation",
+    "description": "Learn how to install kubernetes and install an one node cluster",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "1. Install and Build an One Node Cluster",
+          "text": "step1/text.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
