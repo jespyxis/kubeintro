@@ -1,14 +1,35 @@
-We will install kubernetes and setup a single node cluster. 
+We will start by installing Helm in the current node
 
-Start by turning off swapping as it is not supported by Kubernetes.
+Execute the following command to install Helm:
 
 ```
-sudo swapoff -a
+sudo snap install helm --classic
 ```{{exec}}
 
-#### **1. Install the required packages**
+Execute the following command to check the Helm version. You should be using Helm 3.
 
-Then, we add the Kubernetes official apt repository
+```
+helm version
+```{{exec}}
+
+Create a new namespace that we are going to use in our exercises
+
+```
+kubectl create namespace helm-exercises
+```{{exec}}
+
+Change the Helm environment to use this namespace. We start by checking the current namespace
+
+```
+helm env | grep NAMESPACE
+```{{exec}}
+
+Then, execute the following command to change it to our helm-exercises namespace
+
+```
+export HELM_NAMESPACE=helm-exercises
+```{{exec}}
+
 
 ```
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
