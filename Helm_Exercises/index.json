@@ -1,13 +1,13 @@
 {
-    "title": "Kubernetes installation",
-    "description": "Learn how to install kubernetes and install an one node cluster",
+    "title": "Helm Exercises",
+    "description": "Provides a gentle introduction to Helm",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
         {
-          "title": "1. Install and Build an One Node Cluster",
+          "title": "1. Install Helm and review fundamental commands",
           "text": "step1/text.md"
         }
       ],
