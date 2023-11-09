@@ -95,3 +95,16 @@ Now we are going to install a nginx instance using the Chart. Execute the follow
 ```
 helm install my-nginx bitnami/nginx
 ```{{exec}}
+
+Wait a little bit and then, execute the following command to see the Kubernetes resources deployed to the helm-exercises namespace:
+
+```
+kubectl get all -n helm-exercises
+```{{exec}}
+
+You shall have a Pod, a Service, a Deployment and a ReplicaSet
+
+
+No, go to the [my-nginx.helm-exercises.svc.cluster.local](http://my-nginx.helm-exercises.svc.cluster.local) link to access the nginx service
+
+
