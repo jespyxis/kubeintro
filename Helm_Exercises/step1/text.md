@@ -42,3 +42,11 @@ helm add repo --help
 Click on the entry for the nginx Chart. You will see a small menu on the right
 
 ![Helm Chart Menu](./menu.jpg)
+
+You can use the menu to access the Templates in the Chart, the default values in the values.yaml in the Chart and to obtain information on how to use the Chart to perform an installation. 
+
+Click on the **Install** entry. It shows you how to add the Bitnami repository. For convenience, I copied the command here. Execute the command to add the Bitnami repository
+
+```
+helm repo add bitnami https://charts.bitnami.com/bitnami
+```{{exec}}
