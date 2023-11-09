@@ -103,9 +103,10 @@ Wait a little bit and then, execute the following command to see the Kubernetes 
 kubectl get all -n helm-exercises
 ```{{exec}}
 
-You shall have a Pod, a Service, a Deployment and a ReplicaSet created
+You shall have a Pod, a Service, a Deployment and a ReplicaSet created. Wait till you see the Pod running. Repeat the command untill you see it running. 
 
-[Song Lyrics]({{TRAFFIC_HOST1_8080}})
+Use the link below. You should be able to reach NGINX by using it. 
 
-[Song Lyrics]({{TRAFFIC_HOST1_80}})
+[Use this link to reach nginx]({{TRAFFIC_HOST1_30369}})
+
 
