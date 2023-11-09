@@ -36,7 +36,7 @@ Go to the [Artifact Hub site](https://artifacthub.io) and search for nginx. One 
 Execute the following command to check the syntax of the helm add repo command
 
 ```
-helm add repo --help
+helm repo add --help
 ```{{exec}}
 
 Click on the entry for the nginx Chart. You will see a small menu on the right
