@@ -93,7 +93,6 @@ Now we are going to install a nginx instance using the Chart. Execute the follow
 
 
 ```
-
 helm install my-nginx bitnami/nginx --set service.type=LoadBalancer \
 --set service.nodePorts.http=30369
 ```{{exec}}
@@ -109,5 +108,31 @@ You shall have a Pod, a Service, a Deployment and a ReplicaSet created. Wait til
 Use the link below. You should be able to reach NGINX by using it. 
 
 [Use this link to reach nginx]({{TRAFFIC_HOST1_30369}})
+
+Use the following command to show the application releases
+
+```
+helm list
+```{{exec}}
+
+Now, let's upgrade the release to use a different NodePort
+
+```
+helm upgrade my-nginx bitnami/nginx --set service.type=LoadBalancer \
+--set service.nodePorts.http=30370
+```{{exec}}
+
+Use the following command to see the Kubernetes resources in the helm-exercises namespace. You will see the old resources being removed and the new resources being added. Repeat the command until you find that the new release is installed and operational
+
+```
+kubectl get all -n helm-exercises
+```{{exec}}
+
+Then, use the link below. You should be able to reach NGINX in the new NodePort. 
+
+[Use this link to reach nginx]({{TRAFFIC_HOST1_30370}})
+
+Now, use Helm to remove the Kubernetes Application. Execute the following command:
+
 
 
