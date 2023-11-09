@@ -94,7 +94,8 @@ Now we are going to install a nginx instance using the Chart. Execute the follow
 
 ```
 
-helm install my-nginx bitnami/nginx --set service.type=LoadBalancer
+helm install my-nginx bitnami/nginx --set service.type=LoadBalancer \
+--set service.nodePorts.http=30369
 ```{{exec}}
 
 Wait a little bit and then, execute the following command to see the Kubernetes resources deployed to the helm-exercises namespace:
