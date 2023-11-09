@@ -33,6 +33,8 @@ export HELM_NAMESPACE=helm-exercises
 
 Go to the [Artifact Hub site](https://artifacthub.io) and search for nginx. One of the entries shows that the Chart is available in the Bitnami repository. 
 
+> You can also execute the helm search hub nginx command to perform this type of search
+
 Execute the following command to check the syntax of the helm add repo command
 
 ```
@@ -50,3 +52,16 @@ Click on the **Install** entry. It shows you how to add the Bitnami repository. 
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```{{exec}}
+
+Execute the following command to verify that the Bitnami repository is now available to us
+
+```
+helm repo list
+```{{exec}}
+
+Execute the following command to search for nginx related Charts in the Bitnami repository
+
+```
+helm search repo nginx
+```{{exec}}
+
