@@ -39,4 +39,6 @@ Execute the following command to check the syntax of the helm add repo command
 helm add repo --help
 ```{{exec}}
 
-Use the obtained information to add the Bitnami repository. Name it bitnami
+Click on the entry for the nginx Chart. You will see a small menu on the right
+
+![Helm Chart Menu](./menu.jpg)
