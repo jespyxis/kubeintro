@@ -65,3 +65,33 @@ Execute the following command to search for nginx related Charts in the Bitnami 
 helm search repo nginx
 ```{{exec}}
 
+Now, execute the following command to examine the nginx Chart
+
+```
+helm show chart bitnami/nginx
+```{{exec}}
+
+Let's see the README information contained in the Chart. Execute: 
+
+```
+helm show readme bitnami/nginx | more
+```{{exec}}
+
+You can also see the default values used by the chart using 
+
+```
+helm show values bitnami/nginx | more
+```{{exec}}
+
+Now, let's see the manifest YAML that is generated when we use the Chart. To do this, execute the following command:
+
+```
+helm template bitnami/nginx | more
+```{{exec}}
+
+Now we are going to install a nginx instance using the Chart. Execute the following command:
+
+
+```
+helm install my-nginx bitnami/nginx
+```{{exec}}
